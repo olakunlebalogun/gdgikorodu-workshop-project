@@ -1,0 +1,2 @@
+﻿window.alert("ENJOY THIS WEBPAGE")
+alert("USE IT RESPONSIBLY")

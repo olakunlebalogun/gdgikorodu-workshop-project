@@ -21,13 +21,10 @@ body{
 header{
     height: 95vh;
     text-transform: uppercase;
-    background-image: linear-gradient(to right, rgba(126,213,111,0.8), rgba(126,213,111,0.8)), url(../img/hero.jpg); 
+    background-image: linear-gradient(to right, rgba(124,130,215), rgba(123,213,51,0.8)), url(../img/hero.jpg); 
     background-size: cover;
     background-position: top;
-    -webkit-clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
-    -moz-clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
-    -ms-clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
-    -o-clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+    clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
 }
 
@@ -101,7 +98,11 @@ header{
 
 .btn--white{
    background-color: #fff;
-   color: rgb(77, 199, 77);
+   color:  linear-gradient(to right, rgba(124,130,115), rgba(123,213,51,0.8));
+}
+
+.btn--white span{
+    color: rgba(123,213,51,0.8);
 }
 
 .btn--white::after{
@@ -156,4 +157,31 @@ header{
     }
 
 }
-  
+
+.section-animation{
+   background-color: #f7f7f7;
+   padding: 25rem 0;
+   margin-top: -20vh;
+}
+
+.u-center-text{
+   text-align: center !important;
+}
+
+.u-margin-bottom-big{
+   margin-bottom: 1.5rem !important;
+}  
+
+.heading-secondary{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image:  linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+    margin-top: 10rem;
+    padding-bottom: 5rem;
+}
+
